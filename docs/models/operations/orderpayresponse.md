@@ -1,0 +1,15 @@
+# OrderPayResponse
+
+
+## Fields
+
+| Field                                                              | Type                                                               | Required                                                           | Description                                                        |
+| ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| `apiError`                                                         | [shared.ApiError](../../models/shared/apierror.md)                 | :heavy_minus_sign:                                                 | API related Errors                                                 |
+| `contentType`                                                      | *string*                                                           | :heavy_check_mark:                                                 | N/A                                                                |
+| `errorResponse`                                                    | [shared.ErrorResponse](../../models/shared/errorresponse.md)       | :heavy_minus_sign:                                                 | Any bad or invalid request will lead to following error object     |
+| `headers`                                                          | Record<string, *string*[]>                                         | :heavy_minus_sign:                                                 | N/A                                                                |
+| `orderPayResponse`                                                 | [shared.OrderPayResponse](../../models/shared/orderpayresponse.md) | :heavy_minus_sign:                                                 | OK                                                                 |
+| `rateLimitError`                                                   | [shared.RateLimitError](../../models/shared/ratelimiterror.md)     | :heavy_minus_sign:                                                 | Either ports issue or too many requests                            |
+| `statusCode`                                                       | *number*                                                           | :heavy_check_mark:                                                 | N/A                                                                |
+| `rawResponse`                                                      | [AxiosResponse>](https://axios-http.com/docs/res_schema)           | :heavy_minus_sign:                                                 | N/A                                                                |
