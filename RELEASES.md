@@ -59,3 +59,11 @@ Based on:
 Based on:
 - OpenAPI Doc 2022-09-01 
 - Speakeasy CLI 1.69.1 (2.82.0) https://github.com/speakeasy-api/speakeasy
+
+## 2023-08-10 00:36:29
+### Changes
+Based on:
+- OpenAPI Doc 2022-09-01 
+- Speakeasy CLI 1.70.1 (2.83.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [typescript v1.7.0] .
