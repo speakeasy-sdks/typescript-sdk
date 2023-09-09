@@ -10,9 +10,6 @@ import { RefundURLObject } from "./refundurlobject";
 import { SettlementURLObject } from "./settlementurlobject";
 import { Expose, Type } from "class-transformer";
 
-/**
- * OK
- */
 export class OrdersEntity extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "cf_order_id" })

@@ -20,55 +20,42 @@ const sdk = new Pg();
 sdk.orders.createOrder({
   createOrderBackendRequest: {
     customerDetails: {
-      customerBankAccountNumber: "sapiente",
-      customerBankCode: "quo",
-      customerBankIfsc: "odit",
-      customerEmail: "at",
-      customerId: "at",
-      customerPhone: "maiores",
+      customerBankAccountNumber: "placeat",
+      customerBankCode: "voluptatum",
+      customerBankIfsc: "iusto",
+      customerEmail: "excepturi",
+      customerId: "nisi",
+      customerPhone: "recusandae",
     },
     orderAmount: 10.15,
     orderCurrency: "INR",
     orderExpiryTime: "2021-07-29T00:00:00Z",
-    orderId: "molestiae",
+    orderId: "temporibus",
     orderMeta: {
-      notifyUrl: "quod",
-      paymentMethods: "quod",
-      returnUrl: "esse",
+      notifyUrl: "ab",
+      paymentMethods: "quis",
+      returnUrl: "veritatis",
     },
     orderNote: "Test order",
     orderSplits: [
       {
-        amount: 7805.29,
-        percentage: 6788.8,
-        vendorId: "dicta",
-      },
-      {
-        amount: 7206.33,
-        percentage: 6399.21,
-        vendorId: "occaecati",
-      },
-      {
-        amount: 1433.53,
-        percentage: 5373.73,
-        vendorId: "hic",
+        amount: 6481.72,
+        percentage: 202.18,
+        vendorId: "ipsam",
       },
     ],
     orderTags: {
-      "totam": "beatae",
-      "commodi": "molestiae",
-      "modi": "qui",
-      "impedit": "cum",
+      "repellendus": "sapiente",
     },
     terminal: {
-      terminalId: "esse",
-      terminalPhoneNo: "ipsum",
-      terminalType: "excepturi",
+      terminalId: "quo",
+      terminalPhoneNo: "odit",
+      terminalType: "at",
     },
   },
-  xApiVersion: "aspernatur",
-  xClientId: "perferendis",
-  xClientSecret: "ad",
+  xApiVersion: "at",
+  xClientId: "maiores",
+  xClientSecret: "molestiae",
 }).then((res: CreateOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -114,22 +101,17 @@ sdk.orders.orderPay({
   orderPayRequest: {
     offerId: "faa6cc05-d1e2-401c-b0cf-0c9db3ff0f0b",
     paymentMethod: {
-      emi: {
-        cardAlias: "sed",
-        cardBankName: CardEMICardBankName.Yes,
-        cardCvv: "dolor",
-        cardExpiryMm: "natus",
-        cardExpiryYy: "laboriosam",
-        cardHolderName: "hic",
-        cardNumber: "saepe",
-        channel: "fuga",
-        emiTenure: 449950,
+      cardlessEmi: {
+        channel: "quod",
+        emiTenure: 461479,
+        phone: "861-765-1597 x5144",
+        provider: CardlessEMIProvider.Zestmoney,
       },
     },
     paymentSessionId: "session__CvcEmNKDkmERQrxnx39ibhJ3Ii034pjc8ZVxf3qcgEXCWlgDDlHRgz2XYZCqpajDQSXMMtCusPgOIxYP2LZx0-05p39gC2Vgmq1RAj--gcn",
     saveInstrument: false,
   },
-  xApiVersion: "corporis",
+  xApiVersion: "qui",
 }).then((res: OrderPayResponse) => {
   if (res.statusCode == 200) {
     // handle response

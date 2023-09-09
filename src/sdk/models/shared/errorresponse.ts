@@ -16,9 +16,6 @@ export enum ErrorResponseType {
     ApiError = "api_error",
 }
 
-/**
- * Any bad or invalid request will lead to following error object
- */
 export class ErrorResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "code" })

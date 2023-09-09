@@ -1,6 +1,6 @@
 {
   "name": "PG",
-  "version": "1.12.0",
+  "version": "1.12.1",
   "author": "Cashfree",
   "scripts": {
     "prepare": "tsc --build"

@@ -12,9 +12,6 @@ export enum AuthenticationErrorType {
     AuthenticationError = "authentication_error",
 }
 
-/**
- * Authentication Error
- */
 export class AuthenticationError extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "code" })

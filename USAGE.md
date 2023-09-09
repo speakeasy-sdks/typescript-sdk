@@ -29,36 +29,23 @@ sdk.orders.createOrder({
     orderNote: "Test order",
     orderSplits: [
       {
-        amount: 3843.82,
-        percentage: 4375.87,
-        vendorId: "magnam",
-      },
-      {
-        amount: 8917.73,
-        percentage: 567.13,
-        vendorId: "delectus",
-      },
-      {
-        amount: 2726.56,
-        percentage: 3834.41,
-        vendorId: "molestiae",
+        amount: 6458.94,
+        percentage: 3843.82,
+        vendorId: "iure",
       },
     ],
     orderTags: {
-      "placeat": "voluptatum",
-      "iusto": "excepturi",
-      "nisi": "recusandae",
-      "temporibus": "ab",
+      "magnam": "debitis",
     },
     terminal: {
-      terminalId: "quis",
-      terminalPhoneNo: "veritatis",
-      terminalType: "deserunt",
+      terminalId: "ipsa",
+      terminalPhoneNo: "delectus",
+      terminalType: "tempora",
     },
   },
-  xApiVersion: "perferendis",
-  xClientId: "ipsam",
-  xClientSecret: "repellendus",
+  xApiVersion: "suscipit",
+  xClientId: "molestiae",
+  xClientSecret: "minus",
 }).then((res: CreateOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response

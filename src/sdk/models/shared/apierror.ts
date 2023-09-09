@@ -12,9 +12,6 @@ export enum ApiErrorType {
     ApiError = "api_error",
 }
 
-/**
- * API related Errors
- */
 export class ApiError extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "code" })

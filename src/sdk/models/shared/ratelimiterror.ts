@@ -12,9 +12,6 @@ export enum RateLimitErrorType {
     RateLimitError = "rate_limit_error",
 }
 
-/**
- * Rate Limit Error
- */
 export class RateLimitError extends SpeakeasyBase {
     @SpeakeasyMetadata()
     @Expose({ name: "code" })

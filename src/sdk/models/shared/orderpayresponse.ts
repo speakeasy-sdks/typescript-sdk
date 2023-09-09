@@ -36,9 +36,6 @@ export enum OrderPayResponsePaymentMethod {
     Paylater = "paylater",
 }
 
-/**
- * OK
- */
 export class OrderPayResponse extends SpeakeasyBase {
     /**
      * One of ["link", "custom", "form"]
