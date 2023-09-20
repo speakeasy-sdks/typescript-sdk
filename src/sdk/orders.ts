@@ -36,7 +36,7 @@ export class Orders {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/orders";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(
@@ -182,7 +182,7 @@ export class Orders {
         );
         const url: string = baseURL.replace(/\/$/, "") + "/orders/sessions";
 
-        let [reqBodyHeaders, reqBody]: [object, any] = [{}, {}];
+        let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
         try {
             [reqBodyHeaders, reqBody] = utils.serializeRequestBody(req, "orderPayRequest", "json");
