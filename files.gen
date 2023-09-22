@@ -64,8 +64,6 @@ src/sdk/models/shared/index.ts
 src/sdk/models/callbacks/createorder.ts
 src/sdk/models/callbacks/index.ts
 src/sdk/models/errors/index.ts
-docs/sdks/pg/README.md
-docs/sdks/orders/README.md
 USAGE.md
 docs/models/operations/createorderrequest.md
 docs/models/operations/createorderresponse.md
@@ -125,4 +123,6 @@ docs/models/shared/paylaterpaymentmethod.md
 docs/models/shared/paylaterprovider.md
 docs/models/shared/paylater.md
 docs/models/callbacks/createorderpaymentwebhookresponse.md
+docs/sdks/pg/README.md
+docs/sdks/orders/README.md
 .gitattributes

@@ -20,42 +20,42 @@ const sdk = new Pg();
 sdk.orders.createOrder({
   createOrderBackendRequest: {
     customerDetails: {
-      customerBankAccountNumber: "placeat",
-      customerBankCode: "voluptatum",
-      customerBankIfsc: "iusto",
-      customerEmail: "excepturi",
-      customerId: "nisi",
-      customerPhone: "recusandae",
+      customerBankAccountNumber: "quod",
+      customerBankCode: "quod",
+      customerBankIfsc: "esse",
+      customerEmail: "totam",
+      customerId: "porro",
+      customerPhone: "dolorum",
     },
     orderAmount: 10.15,
     orderCurrency: "INR",
     orderExpiryTime: "2021-07-29T00:00:00Z",
-    orderId: "temporibus",
+    orderId: "dicta",
     orderMeta: {
-      notifyUrl: "ab",
-      paymentMethods: "quis",
-      returnUrl: "veritatis",
+      notifyUrl: "nam",
+      paymentMethods: "officia",
+      returnUrl: "occaecati",
     },
     orderNote: "Test order",
     orderSplits: [
       {
-        amount: 6481.72,
-        percentage: 202.18,
-        vendorId: "ipsam",
+        amount: 1433.53,
+        percentage: 5373.73,
+        vendorId: "hic",
       },
     ],
     orderTags: {
-      "repellendus": "sapiente",
+      "optio": "totam",
     },
     terminal: {
-      terminalId: "quo",
-      terminalPhoneNo: "odit",
-      terminalType: "at",
+      terminalId: "beatae",
+      terminalPhoneNo: "commodi",
+      terminalType: "molestiae",
     },
   },
-  xApiVersion: "at",
-  xClientId: "maiores",
-  xClientSecret: "molestiae",
+  xApiVersion: "modi",
+  xClientId: "qui",
+  xClientSecret: "impedit",
 }).then((res: CreateOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -102,16 +102,16 @@ sdk.orders.orderPay({
     offerId: "faa6cc05-d1e2-401c-b0cf-0c9db3ff0f0b",
     paymentMethod: {
       cardlessEmi: {
-        channel: "quod",
-        emiTenure: 461479,
-        phone: "861-765-1597 x5144",
-        provider: CardlessEMIProvider.Zestmoney,
+        channel: "esse",
+        emiTenure: 216550,
+        phone: "(303) 616-2639 x9643",
+        provider: CardlessEMIProvider.Cashe,
       },
     },
     paymentSessionId: "session__CvcEmNKDkmERQrxnx39ibhJ3Ii034pjc8ZVxf3qcgEXCWlgDDlHRgz2XYZCqpajDQSXMMtCusPgOIxYP2LZx0-05p39gC2Vgmq1RAj--gcn",
     saveInstrument: false,
   },
-  xApiVersion: "qui",
+  xApiVersion: "iure",
 }).then((res: OrderPayResponse) => {
   if (res.statusCode == 200) {
     // handle response

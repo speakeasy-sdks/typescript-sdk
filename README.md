@@ -18,8 +18,6 @@ yarn add https://github.com/speakeasy-sdks/typescript-sdk
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```typescript
 import { Pg } from "PG";
 import { CreateOrderResponse } from "PG/dist/sdk/models/operations";
@@ -29,42 +27,42 @@ const sdk = new Pg();
 sdk.orders.createOrder({
   createOrderBackendRequest: {
     customerDetails: {
-      customerBankAccountNumber: "corrupti",
-      customerBankCode: "provident",
-      customerBankIfsc: "distinctio",
-      customerEmail: "quibusdam",
-      customerId: "unde",
-      customerPhone: "nulla",
+      customerBankAccountNumber: "placeat",
+      customerBankCode: "voluptatum",
+      customerBankIfsc: "iusto",
+      customerEmail: "excepturi",
+      customerId: "nisi",
+      customerPhone: "recusandae",
     },
     orderAmount: 10.15,
     orderCurrency: "INR",
     orderExpiryTime: "2021-07-29T00:00:00Z",
-    orderId: "corrupti",
+    orderId: "temporibus",
     orderMeta: {
-      notifyUrl: "illum",
-      paymentMethods: "vel",
-      returnUrl: "error",
+      notifyUrl: "ab",
+      paymentMethods: "quis",
+      returnUrl: "veritatis",
     },
     orderNote: "Test order",
     orderSplits: [
       {
-        amount: 6458.94,
-        percentage: 3843.82,
-        vendorId: "iure",
+        amount: 6481.72,
+        percentage: 202.18,
+        vendorId: "ipsam",
       },
     ],
     orderTags: {
-      "magnam": "debitis",
+      "repellendus": "sapiente",
     },
     terminal: {
-      terminalId: "ipsa",
-      terminalPhoneNo: "delectus",
-      terminalType: "tempora",
+      terminalId: "quo",
+      terminalPhoneNo: "odit",
+      terminalType: "at",
     },
   },
-  xApiVersion: "suscipit",
-  xClientId: "molestiae",
-  xClientSecret: "minus",
+  xApiVersion: "at",
+  xClientId: "maiores",
+  xClientSecret: "molestiae",
 }).then((res: CreateOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -82,6 +80,32 @@ sdk.orders.createOrder({
 * [createOrder](docs/sdks/orders/README.md#createorder) - Create Order
 * [orderPay](docs/sdks/orders/README.md#orderpay) - Order Pay
 <!-- End SDK Available Operations -->
+
+
+
+<!-- Start Dev Containers -->
+
+
+
+<!-- End Dev Containers -->
+
+
+
+<!-- Start Pagination -->
+# Pagination
+
+Some of the endpoints in this SDK support pagination. To use pagination, you make your SDK calls as usual, but the
+returned response object will have a `next` method that can be called to pull down the next group of results. If the
+return value of `next` is `null`, then there are no more pages to be fetched.
+
+Here's an example of one such pagination call:
+
+
+<!-- End Pagination -->
+
+<!-- Placeholder for Future Speakeasy SDK Sections -->
+
+
 
 ### Maturity
 
