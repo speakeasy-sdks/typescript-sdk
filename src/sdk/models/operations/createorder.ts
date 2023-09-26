@@ -33,6 +33,9 @@ export class CreateOrderResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     authenticationError?: shared.AuthenticationError;
 
+    /**
+     * HTTP response content type for this operation
+     */
     @SpeakeasyMetadata()
     contentType: string;
 
@@ -57,9 +60,15 @@ export class CreateOrderResponse extends SpeakeasyBase {
     @SpeakeasyMetadata()
     rateLimitError?: shared.RateLimitError;
 
+    /**
+     * HTTP response status code for this operation
+     */
     @SpeakeasyMetadata()
     statusCode: number;
 
+    /**
+     * Raw HTTP response; suitable for custom response parsing
+     */
     @SpeakeasyMetadata()
     rawResponse?: AxiosResponse;
 }
