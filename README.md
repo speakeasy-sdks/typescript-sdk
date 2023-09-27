@@ -75,7 +75,7 @@ sdk.orders.createOrder({
 ## Available Resources and Operations
 
 
-### [Orders](docs/sdks/orders/README.md)
+### [orders](docs/sdks/orders/README.md)
 
 * [createOrder](docs/sdks/orders/README.md#createorder) - Create Order
 * [orderPay](docs/sdks/orders/README.md#orderpay) - Order Pay
