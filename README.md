@@ -27,42 +27,42 @@ const sdk = new Pg();
 sdk.orders.createOrder({
   createOrderBackendRequest: {
     customerDetails: {
-      customerBankAccountNumber: "placeat",
-      customerBankCode: "voluptatum",
-      customerBankIfsc: "iusto",
-      customerEmail: "excepturi",
-      customerId: "nisi",
-      customerPhone: "recusandae",
+      customerBankAccountNumber: "North double",
+      customerBankCode: "spherical woman burdensome",
+      customerBankIfsc: "interfaces Smart",
+      customerEmail: "Doyle brown toast",
+      customerId: "Bedfordshire",
+      customerPhone: "Mohr North",
     },
     orderAmount: 10.15,
     orderCurrency: "INR",
     orderExpiryTime: "2021-07-29T00:00:00Z",
-    orderId: "temporibus",
+    orderId: "deploy South",
     orderMeta: {
-      notifyUrl: "ab",
-      paymentMethods: "quis",
-      returnUrl: "veritatis",
+      notifyUrl: "Road male Berkshire",
+      paymentMethods: "parsing female middleware",
+      returnUrl: "Bedfordshire navigating",
     },
     orderNote: "Test order",
     orderSplits: [
       {
-        amount: 6481.72,
-        percentage: 202.18,
-        vendorId: "ipsam",
+        amount: 5942.72,
+        percentage: 3302.96,
+        vendorId: "dearly remount",
       },
     ],
     orderTags: {
-      "repellendus": "sapiente",
+      "expedita": "South",
     },
     terminal: {
-      terminalId: "quo",
-      terminalPhoneNo: "odit",
-      terminalType: "at",
+      terminalId: "Southwest",
+      terminalPhoneNo: "violet Chips Porsche",
+      terminalType: "mobile",
     },
   },
-  xApiVersion: "at",
-  xClientId: "maiores",
-  xClientSecret: "molestiae",
+  xApiVersion: "ROI bypassing vero",
+  xClientId: "Solutions Ferrari Accountability",
+  xClientSecret: "Folk ampere",
 }).then((res: CreateOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response

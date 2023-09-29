@@ -21,42 +21,42 @@ const sdk = new Pg();
 sdk.orders.createOrder({
   createOrderBackendRequest: {
     customerDetails: {
-      customerBankAccountNumber: "quod",
-      customerBankCode: "quod",
-      customerBankIfsc: "esse",
-      customerEmail: "totam",
-      customerId: "porro",
-      customerPhone: "dolorum",
+      customerBankAccountNumber: "North double",
+      customerBankCode: "spherical woman burdensome",
+      customerBankIfsc: "interfaces Smart",
+      customerEmail: "Doyle brown toast",
+      customerId: "Bedfordshire",
+      customerPhone: "Mohr North",
     },
     orderAmount: 10.15,
     orderCurrency: "INR",
     orderExpiryTime: "2021-07-29T00:00:00Z",
-    orderId: "dicta",
+    orderId: "deploy South",
     orderMeta: {
-      notifyUrl: "nam",
-      paymentMethods: "officia",
-      returnUrl: "occaecati",
+      notifyUrl: "Road male Berkshire",
+      paymentMethods: "parsing female middleware",
+      returnUrl: "Bedfordshire navigating",
     },
     orderNote: "Test order",
     orderSplits: [
       {
-        amount: 1433.53,
-        percentage: 5373.73,
-        vendorId: "hic",
+        amount: 5942.72,
+        percentage: 3302.96,
+        vendorId: "dearly remount",
       },
     ],
     orderTags: {
-      "optio": "totam",
+      "expedita": "South",
     },
     terminal: {
-      terminalId: "beatae",
-      terminalPhoneNo: "commodi",
-      terminalType: "molestiae",
+      terminalId: "Southwest",
+      terminalPhoneNo: "violet Chips Porsche",
+      terminalType: "mobile",
     },
   },
-  xApiVersion: "modi",
-  xClientId: "qui",
-  xClientSecret: "impedit",
+  xApiVersion: "ROI bypassing vero",
+  xClientId: "Solutions Ferrari Accountability",
+  xClientSecret: "Folk ampere",
 }).then((res: CreateOrderResponse) => {
   if (res.statusCode == 200) {
     // handle response
@@ -103,16 +103,16 @@ sdk.orders.orderPay({
     offerId: "faa6cc05-d1e2-401c-b0cf-0c9db3ff0f0b",
     paymentMethod: {
       cardlessEmi: {
-        channel: "esse",
-        emiTenure: 216550,
-        phone: "(303) 616-2639 x9643",
-        provider: CardlessEMIProvider.Cashe,
+        channel: "volt",
+        emiTenure: 272003,
+        phone: "895-935-3255",
+        provider: CardlessEMIProvider.Idfc,
       },
     },
     paymentSessionId: "session__CvcEmNKDkmERQrxnx39ibhJ3Ii034pjc8ZVxf3qcgEXCWlgDDlHRgz2XYZCqpajDQSXMMtCusPgOIxYP2LZx0-05p39gC2Vgmq1RAj--gcn",
     saveInstrument: false,
   },
-  xApiVersion: "iure",
+  xApiVersion: "Assistant",
 }).then((res: OrderPayResponse) => {
   if (res.statusCode == 200) {
     // handle response
