@@ -3,53 +3,40 @@
 
 ```typescript
 import { Pg } from "PG";
-import { CreateOrderResponse } from "PG/dist/sdk/models/operations";
 
-const sdk = new Pg();
+(async() => {
+  const sdk = new Pg();
 
-sdk.orders.createOrder({
-  createOrderBackendRequest: {
-    customerDetails: {
-      customerBankAccountNumber: "North double",
-      customerBankCode: "spherical woman burdensome",
-      customerBankIfsc: "interfaces Smart",
-      customerEmail: "Doyle brown toast",
-      customerId: "Bedfordshire",
-      customerPhone: "Mohr North",
-    },
-    orderAmount: 10.15,
-    orderCurrency: "INR",
-    orderExpiryTime: "2021-07-29T00:00:00Z",
-    orderId: "deploy South",
-    orderMeta: {
-      notifyUrl: "Road male Berkshire",
-      paymentMethods: "parsing female middleware",
-      returnUrl: "Bedfordshire navigating",
-    },
-    orderNote: "Test order",
-    orderSplits: [
-      {
-        amount: 5942.72,
-        percentage: 3302.96,
-        vendorId: "dearly remount",
+  const res = await sdk.orders.createOrder({
+    createOrderBackendRequest: {
+      customerDetails: {
+        customerId: "North double",
+        customerPhone: "spherical woman burdensome",
       },
-    ],
-    orderTags: {
-      "expedita": "South",
+      orderAmount: 10.15,
+      orderCurrency: "INR",
+      orderExpiryTime: "2021-07-29T00:00:00Z",
+      orderMeta: {},
+      orderNote: "Test order",
+      orderSplits: [
+        {},
+      ],
+      orderTags: {
+        "temporibus": "SUV",
+      },
+      terminal: {
+        terminalId: "overriding",
+        terminalPhoneNo: "Southeast Southwest but",
+        terminalType: "Recycled",
+      },
     },
-    terminal: {
-      terminalId: "Southwest",
-      terminalPhoneNo: "violet Chips Porsche",
-      terminalType: "mobile",
-    },
-  },
-  xApiVersion: "ROI bypassing vero",
-  xClientId: "Solutions Ferrari Accountability",
-  xClientSecret: "Folk ampere",
-}).then((res: CreateOrderResponse) => {
+    xClientId: "Orchestrator",
+    xClientSecret: "implement",
+  });
+
   if (res.statusCode == 200) {
     // handle response
   }
-});
+})();
 ```
 <!-- End SDK Example Usage -->
