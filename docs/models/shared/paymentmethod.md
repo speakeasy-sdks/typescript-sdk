@@ -1,4 +1,4 @@
-# OrderPayResponsePaymentMethod
+# PaymentMethod
 
 One of ["upi", "netbanking", "card", "app", "cardless_emi", "paylater"] 
 

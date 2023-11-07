@@ -1,4 +1,4 @@
-# ApiErrorType
+# TypeT
 
 api_error
 

@@ -5,7 +5,7 @@
 import { SpeakeasyBase, SpeakeasyMetadata } from "../../../internal/utils";
 import { Expose, Type } from "class-transformer";
 
-export class OrderPayDataPayload extends SpeakeasyBase {}
+export class Payload extends SpeakeasyBase {}
 
 export class OrderPayData extends SpeakeasyBase {
     @SpeakeasyMetadata()
@@ -18,8 +18,8 @@ export class OrderPayData extends SpeakeasyBase {
 
     @SpeakeasyMetadata()
     @Expose({ name: "payload" })
-    @Type(() => OrderPayDataPayload)
-    payload?: OrderPayDataPayload;
+    @Type(() => Payload)
+    payload?: Payload;
 
     @SpeakeasyMetadata()
     @Expose({ name: "url" })

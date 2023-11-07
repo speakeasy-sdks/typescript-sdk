@@ -8,7 +8,7 @@ import { Expose } from "class-transformer";
 /**
  * api_error
  */
-export enum ApiErrorType {
+export enum TypeT {
     ApiError = "api_error",
 }
 
@@ -26,5 +26,5 @@ export class ApiError extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "type" })
-    type?: ApiErrorType;
+    type?: TypeT;
 }

@@ -1,5 +1,5 @@
 # Orders
-(*orders*)
+(*.orders*)
 
 ### Available Operations
 
@@ -45,6 +45,7 @@ import { Pg } from "PG";
     xClientSecret: "string",
   });
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -84,6 +85,7 @@ import { Pg } from "PG";
     },
     xApiVersion: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response

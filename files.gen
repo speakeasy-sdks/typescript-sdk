@@ -21,7 +21,6 @@ src/sdk/types/rfcdate.ts
 tsconfig.json
 src/sdk/models/operations/createorder.ts
 src/sdk/models/operations/orderpay.ts
-src/sdk/models/operations/index.ts
 src/sdk/models/shared/ratelimiterror.ts
 src/sdk/models/shared/ordersentity.ts
 src/sdk/models/shared/settlementurlobject.ts
@@ -45,10 +44,11 @@ src/sdk/models/shared/whcustomerdetails.ts
 src/sdk/models/shared/orderpayresponse.ts
 src/sdk/models/shared/orderpaydata.ts
 src/sdk/models/shared/orderpayrequest.ts
-src/sdk/models/shared/index.ts
 src/sdk/models/callbacks/createorder.ts
-src/sdk/models/callbacks/index.ts
 src/sdk/models/errors/index.ts
+src/sdk/models/operations/index.ts
+src/sdk/models/shared/index.ts
+src/sdk/models/callbacks/index.ts
 USAGE.md
 docs/models/operations/createorderrequest.md
 docs/models/operations/createorderresponse.md
@@ -66,7 +66,7 @@ docs/models/shared/errorresponsetype.md
 docs/models/shared/errorresponse.md
 docs/models/shared/authenticationerrortype.md
 docs/models/shared/authenticationerror.md
-docs/models/shared/apierrortype.md
+docs/models/shared/typet.md
 docs/models/shared/apierror.md
 docs/models/shared/createorderbackendrequest.md
 docs/models/shared/terminaldetails.md
@@ -78,11 +78,11 @@ docs/models/shared/whpaymentmethod.md
 docs/models/shared/whcard.md
 docs/models/shared/whorder.md
 docs/models/shared/whcustomerdetails.md
-docs/models/shared/orderpayresponseaction.md
-docs/models/shared/orderpayresponsechannel.md
-docs/models/shared/orderpayresponsepaymentmethod.md
+docs/models/shared/action.md
+docs/models/shared/channel.md
+docs/models/shared/paymentmethod.md
 docs/models/shared/orderpayresponse.md
-docs/models/shared/orderpaydatapayload.md
+docs/models/shared/payload.md
 docs/models/shared/orderpaydata.md
 docs/models/shared/orderpayrequest.md
 docs/models/callbacks/createorderpaymentwebhookresponse.md
