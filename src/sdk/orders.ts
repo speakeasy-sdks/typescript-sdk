@@ -34,7 +34,7 @@ export class Orders {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/orders";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/orders";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -61,7 +61,7 @@ export class Orders {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",
@@ -178,7 +178,7 @@ export class Orders {
             this.sdkConfiguration.serverURL,
             this.sdkConfiguration.serverDefaults
         );
-        const url: string = baseURL.replace(/\/$/, "") + "/orders/sessions";
+        const operationUrl: string = baseURL.replace(/\/$/, "") + "/orders/sessions";
 
         let [reqBodyHeaders, reqBody]: [object, any] = [{}, null];
 
@@ -201,7 +201,7 @@ export class Orders {
 
         const httpRes: AxiosResponse = await client.request({
             validateStatus: () => true,
-            url: url,
+            url: operationUrl,
             method: "post",
             headers: headers,
             responseType: "arraybuffer",

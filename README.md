@@ -61,7 +61,7 @@ import { Pg } from "PG";
 ## Available Resources and Operations
 
 
-### [.orders](docs/sdks/orders/README.md)
+### [orders](docs/sdks/orders/README.md)
 
 * [createOrder](docs/sdks/orders/README.md#createorder) - Create Order
 * [orderPay](docs/sdks/orders/README.md#orderpay) - Order Pay
@@ -90,9 +90,55 @@ Here's an example of one such pagination call:
 <!-- Start Error Handling -->
 # Error Handling
 
-Handling errors in your SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+Handling errors in this SDK should largely match your expectations.  All operations return a response object or throw an error.  If Error objects are specified in your OpenAPI Spec, the SDK will throw the appropriate Error type.
+
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 
+## Example
+
+```typescript
+import { Pg } from "PG";
+
+(async () => {
+    const sdk = new Pg();
+
+    let res;
+    try {
+        res = await sdk.orders.createOrder({
+            createOrderBackendRequest: {
+                customerDetails: {
+                    customerId: "string",
+                    customerPhone: "string",
+                },
+                orderAmount: 10.15,
+                orderCurrency: "INR",
+                orderExpiryTime: "2021-07-29T00:00:00Z",
+                orderMeta: {},
+                orderNote: "Test order",
+                orderSplits: [{}],
+                orderTags: {
+                    key: "string",
+                },
+                terminal: {
+                    terminalId: "string",
+                    terminalPhoneNo: "string",
+                    terminalType: "string",
+                },
+            },
+            xClientId: "string",
+            xClientSecret: "string",
+        });
+    } catch (e) {}
+
+    if (res.statusCode == 200) {
+        // handle response
+    }
+})();
+
+```
 <!-- End Error Handling -->
 
 
@@ -218,8 +264,6 @@ const httpClient = axios.create({
 
 const sdk = new Pg({defaultClient: httpClient});
 ```
-
-
 <!-- End Custom HTTP Client -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
