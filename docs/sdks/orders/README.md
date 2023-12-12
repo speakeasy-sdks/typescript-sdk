@@ -15,7 +15,7 @@ Use this API to create orders with Cashfree from your backend and get the paymen
 ```typescript
 import { Pg } from "PG";
 
-(async() => {
+async function run() {
   const sdk = new Pg();
 
   const res = await sdk.orders.createOrder({
@@ -48,7 +48,9 @@ import { Pg } from "PG";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -77,7 +79,7 @@ Use this API when you have already created the orders and want Cashfree to proce
 ```typescript
 import { Pg } from "PG";
 
-(async() => {
+async function run() {
   const sdk = new Pg();
 
   const res = await sdk.orders.orderPay({
@@ -92,7 +94,9 @@ import { Pg } from "PG";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters

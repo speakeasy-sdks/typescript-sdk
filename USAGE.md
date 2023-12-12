@@ -1,8 +1,8 @@
-<!-- Start SDK Example Usage -->
+<!-- Start SDK Example Usage [usage] -->
 ```typescript
 import { Pg } from "PG";
 
-(async () => {
+async function run() {
     const sdk = new Pg();
 
     const res = await sdk.orders.createOrder({
@@ -33,7 +33,9 @@ import { Pg } from "PG";
     if (res.statusCode == 200) {
         // handle response
     }
-})();
+}
+
+run();
 
 ```
-<!-- End SDK Example Usage -->
+<!-- End SDK Example Usage [usage] -->

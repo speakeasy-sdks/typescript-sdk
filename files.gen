@@ -49,7 +49,6 @@ src/sdk/models/errors/index.ts
 src/sdk/models/operations/index.ts
 src/sdk/models/shared/index.ts
 src/sdk/models/callbacks/index.ts
-USAGE.md
 docs/sdk/models/operations/createorderrequest.md
 docs/sdk/models/operations/createorderresponse.md
 docs/sdk/models/operations/orderpayrequest.md
@@ -88,4 +87,5 @@ docs/sdk/models/shared/orderpayrequest.md
 docs/sdk/models/callbacks/createorderpaymentwebhookresponse.md
 docs/sdks/pg/README.md
 docs/sdks/orders/README.md
+USAGE.md
 .gitattributes
