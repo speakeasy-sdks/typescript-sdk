@@ -1,21 +1,10 @@
-configVersion: 1.0.0
-management:
-  docChecksum: af06384e525f01026fc7dc59efb1b4ca
-  docVersion: "2022-09-01"
-  speakeasyVersion: 1.127.0
-  generationVersion: 2.220.0
+configVersion: 2.0.0
 generation:
-  comments: {}
   sdkClassName: PG
-  repoURL: https://github.com/speakeasy-sdks/typescript-sdk.git
   usageSnippets:
     optionalPropertyRendering: withExample
   fixes:
     nameResolutionDec2023: false
-features:
-  typescript:
-    core: 3.3.9
-    globalServerURLs: 2.82.1
 typescript:
   version: 2.1.1
   author: Cashfree
@@ -30,9 +19,7 @@ typescript:
       shared: sdk/models/shared
       webhooks: sdk/models/webhooks
   inputModelSuffix: input
-  installationURL: https://github.com/speakeasy-sdks/typescript-sdk
   maxMethodParams: 0
   outputModelSuffix: output
   packageName: PG
-  repoSubDirectory: .
   templateVersion: v1
