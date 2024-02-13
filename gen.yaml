@@ -5,8 +5,10 @@ generation:
     optionalPropertyRendering: withExample
   fixes:
     nameResolutionDec2023: false
+    parameterOrderingFeb2024: false
+    requestResponseComponentNamesFeb2024: false
 typescript:
-  version: 2.1.1
+  version: 2.1.2
   author: Cashfree
   clientServerStatusCodesAsErrors: false
   flattenGlobalSecurity: true
