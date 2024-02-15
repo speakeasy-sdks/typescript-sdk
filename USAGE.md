@@ -30,7 +30,7 @@ async function run() {
                 },
             ],
             orderTags: {
-                key: "string",
+                key: "<value>",
             },
             terminal: {
                 terminalId: "1",
@@ -38,8 +38,8 @@ async function run() {
                 terminalType: "SPOS",
             },
         },
-        xClientId: "string",
-        xClientSecret: "string",
+        xClientId: "<value>",
+        xClientSecret: "<value>",
     });
 
     if (res.statusCode == 200) {

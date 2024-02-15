@@ -4,15 +4,15 @@ management:
   docChecksum: af06384e525f01026fc7dc59efb1b4ca
   docVersion: "2022-09-01"
   speakeasyVersion: internal
-  generationVersion: 2.253.0
-  releaseVersion: 2.1.2
-  configChecksum: 3a1a109cdb66db0a5a53ff80ba4ff6ac
+  generationVersion: 2.258.0
+  releaseVersion: 2.1.3
+  configChecksum: 2ea47fed397ec6488a30e5d5894e1b8e
   repoURL: https://github.com/speakeasy-sdks/typescript-sdk.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/typescript-sdk
 features:
   typescript:
-    core: 3.4.6
+    core: 3.4.7
     globalServerURLs: 2.82.1
 generatedFiles:
   - src/sdk/orders.ts

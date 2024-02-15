@@ -52,7 +52,7 @@ async function run() {
                 },
             ],
             orderTags: {
-                key: "string",
+                key: "<value>",
             },
             terminal: {
                 terminalId: "1",
@@ -60,8 +60,8 @@ async function run() {
                 terminalType: "SPOS",
             },
         },
-        xClientId: "string",
-        xClientSecret: "string",
+        xClientId: "<value>",
+        xClientSecret: "<value>",
     });
 
     if (res.statusCode == 200) {
@@ -133,7 +133,7 @@ async function run() {
                     },
                 ],
                 orderTags: {
-                    key: "string",
+                    key: "<value>",
                 },
                 terminal: {
                     terminalId: "1",
@@ -141,8 +141,8 @@ async function run() {
                     terminalType: "SPOS",
                 },
             },
-            xClientId: "string",
-            xClientSecret: "string",
+            xClientId: "<value>",
+            xClientSecret: "<value>",
         });
     } catch (err) {
         if (err instanceof errors.SDKError) {
@@ -210,7 +210,7 @@ async function run() {
                 },
             ],
             orderTags: {
-                key: "string",
+                key: "<value>",
             },
             terminal: {
                 terminalId: "1",
@@ -218,8 +218,8 @@ async function run() {
                 terminalType: "SPOS",
             },
         },
-        xClientId: "string",
-        xClientSecret: "string",
+        xClientId: "<value>",
+        xClientSecret: "<value>",
     });
 
     if (res.statusCode == 200) {
@@ -268,7 +268,7 @@ async function run() {
                 },
             ],
             orderTags: {
-                key: "string",
+                key: "<value>",
             },
             terminal: {
                 terminalId: "1",
@@ -276,8 +276,8 @@ async function run() {
                 terminalType: "SPOS",
             },
         },
-        xClientId: "string",
-        xClientSecret: "string",
+        xClientId: "<value>",
+        xClientSecret: "<value>",
     });
 
     if (res.statusCode == 200) {
